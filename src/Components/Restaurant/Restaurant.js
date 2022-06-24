@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Meal from "../Meal/Meal";
 
 const Restaurant = () => {
     const [searchText,setSearchText] = useState('');
@@ -18,7 +19,9 @@ const Restaurant = () => {
     return (
         <div>
             <input onChange={handleSearch} type="text" placeholder="Search Food"></input>
-            
+            {
+                meals.map(meal =><Meal meal={meal}></Meal>)
+            }
         </div>
     );
 };
