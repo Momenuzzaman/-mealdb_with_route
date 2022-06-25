@@ -19,6 +19,7 @@ const Restaurant = () => {
 
     return (
         <div>
+            <h1>Welcome to Our Restaurant</h1>
             <input className="search" onChange={handleSearch} type="text" placeholder="Search Food"></input>
         <div className= 'meal-container'>
             {
