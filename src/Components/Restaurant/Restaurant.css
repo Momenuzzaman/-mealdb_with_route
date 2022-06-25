@@ -1,0 +1,12 @@
+.search{
+    margin-top: 10px;
+    width: 500px;
+    height: 40px
+}
+.meal-container{
+    margin-top: 40px;
+    margin-left: 200px;
+    /* margin-bottom: 20px; */
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Meal from "../Meal/Meal";
+import './Restaurant.css';
 
 const Restaurant = () => {
     const [searchText,setSearchText] = useState('');
@@ -18,10 +19,12 @@ const Restaurant = () => {
 
     return (
         <div>
-            <input onChange={handleSearch} type="text" placeholder="Search Food"></input>
+            <input className="search" onChange={handleSearch} type="text" placeholder="Search Food"></input>
+        <div className= 'meal-container'>
             {
                 meals.map(meal =><Meal meal={meal}></Meal>)
             }
+        </div>
         </div>
     );
 };
