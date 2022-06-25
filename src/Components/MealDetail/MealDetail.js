@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Detail from "../detail/Detail";
+import './MealDetai.css';
 
 
 
@@ -14,7 +15,7 @@ const MealDetail = () => {
         .then(data => setDetail(data.meals))
     },[]);
     return (
-        <div>
+        <div className="mealDetail">
             {
             mealDetail.map(meal => <Detail meal = {meal}></Detail>)
             }

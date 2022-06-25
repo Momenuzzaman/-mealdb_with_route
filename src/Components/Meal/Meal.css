@@ -3,5 +3,10 @@
 }
 .button{
     border: none;
-    background-color:goldenrod
+    background-color:goldenrod;
+    margin: auto;
+    margin-bottom: 10px;
+    padding:5px;
+    width: 100px;
+    border-radius:10px;
 }
