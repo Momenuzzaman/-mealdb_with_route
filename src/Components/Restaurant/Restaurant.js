@@ -22,7 +22,7 @@ const Restaurant = () => {
             <input className="search" onChange={handleSearch} type="text" placeholder="Search Food"></input>
         <div className= 'meal-container'>
             {
-                meals.map(meal =><Meal meal={meal}></Meal>)
+                meals.map(meal =><Meal key ={meal.idMeal} meal={meal}></Meal>)
             }
         </div>
         </div>
